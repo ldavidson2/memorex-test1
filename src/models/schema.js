@@ -10,6 +10,13 @@ export const schema = {
                     "isRequired": true,
                     "attributes": []
                 },
+                "PK": {
+                    "name": "PK",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": true,
+                    "attributes": []
+                },
                 "SK": {
                     "name": "SK",
                     "isArray": false,
@@ -160,5 +167,5 @@ export const schema = {
     "enums": {},
     "nonModels": {},
     "codegenVersion": "3.3.5",
-    "version": "60e78a4cc38e0bb7ac57f9849d5f2e9d"
+    "version": "221443b4bbeea5aa93e944b8252a0a97"
 };

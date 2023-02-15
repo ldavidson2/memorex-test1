@@ -4,7 +4,7 @@
 export const getUsers = /* GraphQL */ `
   query GetUsers($id: ID!) {
     getUsers(id: $id) {
-      id
+      PK
       SK
       companyName
       companyEmail
@@ -22,6 +22,7 @@ export const getUsers = /* GraphQL */ `
       dementiaLikelihood
       notes
       tests
+      id
       createdAt
       updatedAt
       _version
@@ -38,7 +39,7 @@ export const listUsers = /* GraphQL */ `
   ) {
     listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
-        id
+        PK
         SK
         companyName
         companyEmail
@@ -56,6 +57,7 @@ export const listUsers = /* GraphQL */ `
         dementiaLikelihood
         notes
         tests
+        id
         createdAt
         updatedAt
         _version
@@ -81,7 +83,7 @@ export const syncUsers = /* GraphQL */ `
       lastSync: $lastSync
     ) {
       items {
-        id
+        PK
         SK
         companyName
         companyEmail
@@ -99,6 +101,7 @@ export const syncUsers = /* GraphQL */ `
         dementiaLikelihood
         notes
         tests
+        id
         createdAt
         updatedAt
         _version

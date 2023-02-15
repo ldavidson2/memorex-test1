@@ -7,7 +7,7 @@ export const createUsers = /* GraphQL */ `
     $condition: ModelUsersConditionInput
   ) {
     createUsers(input: $input, condition: $condition) {
-      id
+      PK
       SK
       companyName
       companyEmail
@@ -25,6 +25,7 @@ export const createUsers = /* GraphQL */ `
       dementiaLikelihood
       notes
       tests
+      id
       createdAt
       updatedAt
       _version
@@ -39,7 +40,7 @@ export const updateUsers = /* GraphQL */ `
     $condition: ModelUsersConditionInput
   ) {
     updateUsers(input: $input, condition: $condition) {
-      id
+      PK
       SK
       companyName
       companyEmail
@@ -57,6 +58,7 @@ export const updateUsers = /* GraphQL */ `
       dementiaLikelihood
       notes
       tests
+      id
       createdAt
       updatedAt
       _version
@@ -71,7 +73,7 @@ export const deleteUsers = /* GraphQL */ `
     $condition: ModelUsersConditionInput
   ) {
     deleteUsers(input: $input, condition: $condition) {
-      id
+      PK
       SK
       companyName
       companyEmail
@@ -89,6 +91,7 @@ export const deleteUsers = /* GraphQL */ `
       dementiaLikelihood
       notes
       tests
+      id
       createdAt
       updatedAt
       _version

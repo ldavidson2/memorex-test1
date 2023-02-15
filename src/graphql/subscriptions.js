@@ -4,7 +4,7 @@
 export const onCreateUsers = /* GraphQL */ `
   subscription OnCreateUsers($filter: ModelSubscriptionUsersFilterInput) {
     onCreateUsers(filter: $filter) {
-      id
+      PK
       SK
       companyName
       companyEmail
@@ -22,6 +22,7 @@ export const onCreateUsers = /* GraphQL */ `
       dementiaLikelihood
       notes
       tests
+      id
       createdAt
       updatedAt
       _version
@@ -33,7 +34,7 @@ export const onCreateUsers = /* GraphQL */ `
 export const onUpdateUsers = /* GraphQL */ `
   subscription OnUpdateUsers($filter: ModelSubscriptionUsersFilterInput) {
     onUpdateUsers(filter: $filter) {
-      id
+      PK
       SK
       companyName
       companyEmail
@@ -51,6 +52,7 @@ export const onUpdateUsers = /* GraphQL */ `
       dementiaLikelihood
       notes
       tests
+      id
       createdAt
       updatedAt
       _version
@@ -62,7 +64,7 @@ export const onUpdateUsers = /* GraphQL */ `
 export const onDeleteUsers = /* GraphQL */ `
   subscription OnDeleteUsers($filter: ModelSubscriptionUsersFilterInput) {
     onDeleteUsers(filter: $filter) {
-      id
+      PK
       SK
       companyName
       companyEmail
@@ -80,6 +82,7 @@ export const onDeleteUsers = /* GraphQL */ `
       dementiaLikelihood
       notes
       tests
+      id
       createdAt
       updatedAt
       _version
