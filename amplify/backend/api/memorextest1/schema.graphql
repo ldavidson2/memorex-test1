@@ -3,7 +3,7 @@
 input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
 
 type Users @model {
-  id: ID!
+  PK: String!
   SK: String!
   companyName: String
   companyEmail: String
